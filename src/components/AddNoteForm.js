@@ -2,11 +2,15 @@ import React, { useState, useContext } from 'react';
 import NotesContext from '../context/notes';
 
 const AddNoteForm = () => {
+  // Return the notesDispatch action from the current context value
+  // https://reactjs.org/docs/hooks-reference.html#usecontext
   const { notesDispatch } = useContext(NotesContext);
 
+  // Create local state for the input form field values
   const [noteTitle, setNoteTitle] = useState('');
   const [noteBody, setNoteBody] = useState('');
 
+  // Function to dispatch ADD_NOTE action to notesDispatch()
   const addNote = e => {
     e.preventDefault();
 
@@ -20,6 +24,7 @@ const AddNoteForm = () => {
     setNoteBody('');
   };
 
+  // Render AddNoteForm component
   return (
     <div>
       <p>Add Note</p>

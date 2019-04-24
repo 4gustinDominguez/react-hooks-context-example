@@ -1,3 +1,5 @@
+// Creating a React Reducer to handle notes actions
+// https://reactjs.org/docs/hooks-reference.html#usereducer
 const notesReducer = (state, action) => {
   switch (action.type) {
     case 'POPULATE_NOTES':

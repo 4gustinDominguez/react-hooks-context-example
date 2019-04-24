@@ -3,10 +3,15 @@ import NotesContext from '../context/notes';
 import useMousePosition from '../hooks/useMousePosition';
 
 const Note = ({ note }) => {
+  // Return the notesDispatch action from the current context value
+  // https://reactjs.org/docs/hooks-reference.html#usecontext
   const { notesDispatch } = useContext(NotesContext);
 
+  // Create a variable for useMousePosition() hook.
+  // https://reactjs.org/docs/hooks-custom.html#using-a-custom-hook
   const position = useMousePosition();
 
+  // Dispatch REMOVE_NOTE action on button click
   const removeNote = title => {
     notesDispatch({
       type: 'REMOVE_NOTE',
