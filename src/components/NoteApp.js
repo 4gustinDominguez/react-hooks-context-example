@@ -6,7 +6,6 @@ import AddNoteForm from './AddNoteForm';
 import NotesContext from '../context/notes';
 
 const NoteApp = () => {
-  //const [notes, setNotes] = useState([]);
   const [notes, notesDispatch] = useReducer(notesReducer, []);
 
   useEffect(() => {
