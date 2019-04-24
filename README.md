@@ -8,9 +8,9 @@ Throughout the application are comments to explain what each component/section o
 
 ## Scripts
 
-`npm start` - Starts the application on a local dev server.
-`npm run build` - Build a production version of the application in the public folder.
-`npm run test` - Runs the test suite (currently none) using the Jest testing framework.
+`npm start` - Starts the application on a local dev server.  
+`npm run build` - Build a production version of the application in the public folder.  
+`npm run test` - Runs the test suite (currently none) using the Jest testing framework.  
 `npm run eject` - Extracts all build modules for increased customization.
 
 Visit https://facebook.github.io/create-react-app/docs/available-scripts for more info on create-react-app!
