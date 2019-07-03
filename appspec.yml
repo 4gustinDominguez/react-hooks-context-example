@@ -1,0 +1,11 @@
+# React-Hooks CodeDeploy AppSpec File
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/react-hooks
+hooks:
+  AfterInstall:
+    - location: server/depend.sh
+      timeout: 180
+      runas: root
