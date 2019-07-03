@@ -6,6 +6,6 @@ files:
     destination: /home/ec2-user/react-hooks
 hooks:
   AfterInstall:
-    - location: server/depend.sh
+    - location: scritps/depend.sh
       timeout: 180
       runas: root
